@@ -13,7 +13,10 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        return 'index';
+        $nome = "Daniel";
+        $idade = 17;
+        $html = "<h1> Olá eu sou H1 </h1>";
+        return view('site.home', compact('nome', 'idade', 'html') );
     }
 
     /**
